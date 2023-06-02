@@ -1,6 +1,6 @@
 ﻿Public Class Form1
-    Dim a As Integer
-    Dim b As Integer
+    Dim a As Integer            'Definimos a como variable de tipo entero
+    Dim b As Integer            'Definimos b como variable de tipo entero
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
     End Sub
@@ -10,12 +10,12 @@
     End Sub
 
     Private Sub Button1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button1.Click
-        a = Val(TextBox1.Text)
-        b = Val(TextBox2.Text)
-        If (a > b) Then
-            TextBox3.Text = Str(a)
+        a = Val(TextBox1.Text)              'Transforma el número ingresado en TextBox1 como cadena a tipo entero y lo almacena en a
+        b = Val(TextBox2.Text)              'Transforma el número ingresado en TextBox2 como cadena a tipo entero y lo almacena en b
+        If (a > b) Then                     'Comparación entre a y b
+            TextBox3.Text = Str(a)          'Convierte la variable a en cadena de caracteres y la muestra en pantalla
         Else
-            TextBox3.Text = Str(b)
+            TextBox3.Text = Str(b)          'Convierte la variable b en cadena de caracteres y la muestra en pantalla
         End If
 
     End Sub
